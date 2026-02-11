@@ -13,7 +13,7 @@
     <div id="musicControls" class="music-controls">
     <button id="musicToggle" class="music-btn">🎵 Play Music</button>
     
-    <audio id="bgMusic" loop autoplay>
+    <audio id="bgMusic" loop autoplay onplay="this.volume=0.1">
         <source id="musicSource" src="https://res.cloudinary.com/dalc73sbr/video/upload/v1770759481/I_Wanna_Be_Yours_mt2cmn.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
