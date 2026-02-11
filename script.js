@@ -47,21 +47,6 @@ function updateStars() {
         }
     }
 }
-
-const button = document.getElementById("valentinesButton");
-
-button.addEventListener("click", () => {
-  if (button.textContent === "Click Me! ❤") {
-    button.textContent = "loading...";
-    fetch('send_mail.php')
-      .then(response => {
-        if (response.ok) {
-          button.textContent = "Check Your Email 🙃";
-        } else {
-          console.error('Failed to send email');
-          button.textContent = "Error 😞";
-        }
-      })
       .catch(error => {
         // Handle network errors or other issues
         console.error('Error:', error);
@@ -212,7 +197,7 @@ function drawText() {
 
     if(frameNumber >= 3000 && frameNumber < 99999){
         context.fillStyle = `rgba(45, 45, 255, ${thirdOpacity})`;
-        context.fillText("Happy Valentine's Day <3", canvas.width/2, (canvas.height/2 + 120));
+        context.fillText("Sevgililer Günümüz Kutlu Olsun <3 😘", canvas.width/2, (canvas.height/2 + 120));
         thirdOpacity = thirdOpacity + 0.01;
 
         button.style.display = "block";
