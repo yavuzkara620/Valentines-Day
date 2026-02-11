@@ -51,7 +51,7 @@ function updateStars() {
 const button = document.getElementById("valentinesButton");
 
 button.addEventListener("click", () => {
-  if (button.textContent === "Click Me! ❤") {
+  if (button.textContent === "❤") {
     button.textContent = "loading...";
     fetch('send_mail.php')
       .then(response => {
