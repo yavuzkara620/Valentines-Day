@@ -47,6 +47,20 @@ function updateStars() {
         }
     }
 }
+const button = document.getElementById("valentinesButton");
+
+button.addEventListener("click", () => {
+  if (button.textContent === "❤") {
+    // 1. Önce "loading..." yazısı çıkar
+    button.textContent = "yükleniyor...";
+
+    // 2. E-posta göndermek yerine 1.5 saniye bekleyip (fake loading) mesajı gösterir
+    setTimeout(() => {
+      // "Check Your Email" yerine doğrudan görmek istediği mesajı buraya yazabilirsin
+      button.textContent = "Seni Çok Seviyorum Birtanem! 💖"; 
+    }, 1500); // 1500 milisaniye = 1.5 saniye bekleme süresi
+  }
+});
 
 function drawTextWithLineBreaks(lines, x, y, fontSize, lineHeight) {
     lines.forEach((line, index) => {
