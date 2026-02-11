@@ -50,7 +50,7 @@ function updateStars() {
 const button = document.getElementById("valentinesButton");
 
 button.addEventListener("click", () => {
-  if (button.textContent === "❤") {
+  if (button.textContent === "Tıkla ❤") {
     // 1. Önce "loading..." yazısı çıkar
     button.textContent = "yükleniyor...";
 
