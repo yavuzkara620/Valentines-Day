@@ -51,14 +51,14 @@ const button = document.getElementById("valentinesButton");
 
 button.addEventListener("click", () => {
   if (button.textContent === "Tıkla ❤") {
-    // 1. Önce "loading..." yazısı çıkar
+    // 1. Önce görsel bir geri bildirim için "yükleniyor..." yazısı çıkar
     button.textContent = "yükleniyor...";
 
-    // 2. E-posta göndermek yerine 1.5 saniye bekleyip (fake loading) mesajı gösterir
+    // 2. 1.5 saniye sonra yönlendirme yapar
     setTimeout(() => {
-      // "Check Your Email" yerine doğrudan görmek istediği mesajı buraya yazabilirsin
-      button.textContent = "Seni Çok Seviyorum Birtanem! 💖"; 
-    }, 1500); // 1500 milisaniye = 1.5 saniye bekleme süresi
+      // "https://www.ornek.com" yerine gitmesini istediğin adresi yazmalısın
+      window.location.href = "https://www.google.com"; 
+    }, 1500); 
   }
 });
 
