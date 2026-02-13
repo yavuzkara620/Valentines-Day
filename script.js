@@ -57,7 +57,7 @@ button.addEventListener("click", () => {
     // 2. 1.5 saniye sonra yönlendirme yapar
     setTimeout(() => {
       // "https://www.ornek.com" yerine gitmesini istediğin adresi yazmalısın
-      window.location.href = "https://www.google.com"; 
+      window.location.href = "https://yavuzkara620.github.io/hearth/"; 
     }, 1500); 
   }
 });
